@@ -49,3 +49,8 @@ ranges.forEach((range) => range.addEventListener("click", rangeUpdate));
 ranges.forEach((range) => range.addEventListener("mousemove", rangeUpdate));
 progress.addEventListener("click", scrub);
 fullscreen.addEventListener("click", goFull);
+window.addEventListener("keyup", (e) => {
+  if (e.key == " ") {
+    play();
+  }
+});
